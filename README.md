@@ -15,24 +15,26 @@ A Flask-based personal finance dashboard that helps users track their expenses, 
 ### 1. Clone the Repository
 git clone https://github.com/guptacoder30082003/PGMinorProject.git
 cd PGMinorProject
-2. Set Up Virtual Environment
+### 2. Set Up Virtual Environment
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-3. Install Dependencies
+### 3. Install Dependencies
 pip install -r requirements.txt
-4. Database Setup
+### 4. Database Setup
 python manage.py
-5. Run the Application
+### 5. Run the Application
 flask run
 
-Dependencies:
-Backend (Python):
+## Dependencies
+### 1. Backend(Python)
 1.Flask
 2.Flask-SQLAlchemy
 3.Flask-Migrate
 4.Flask-CORS
 5.python-dotenv
-Frontend:
+### 2. Frontend
 1.Bootstrap 5
 2.Chart.js
 3.Vanilla JavaScript
+
+Demo is shown in 24.04.2025_18.44.50_REC.mp4
