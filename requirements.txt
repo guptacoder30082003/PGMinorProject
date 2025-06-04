@@ -1,6 +1,6 @@
 Flask
 Werkzeug
-Flask-SQLAlchemy
+Flask-SQLAlchemy==1.4.49
 Flask-Migrate
 psycopg2-binary  
 Flask-Login
