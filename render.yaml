@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: expenserfx
+    runtime: python
+    buildCommand: ""
+    startCommand: python run.py
