@@ -6,7 +6,7 @@ psycopg2-binary
 Flask-Login
 Flask-Security
 Flask-Bcrypt
-itsdangerous
+itsdangerous==1.1.0
 Flask-WTF
 email-validator
 Flask-CORS
