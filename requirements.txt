@@ -16,3 +16,4 @@ Flask-Bootstrap
 requests
 python-dateutil
 gunicorn
+Flask-Mail
