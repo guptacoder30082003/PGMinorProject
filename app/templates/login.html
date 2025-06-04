@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - eXpenserFX</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/Designer-removebg-preview.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="login-section">
+      <h1>eXpenserFX</h1>
+      <p class="tagline">Your Pocket Friend</p>
+
+      <form class="form" method="POST" action="">
+        {{ form.hidden_tag() }}
+      
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <div class="flash-messages">
+              {% for category, message in messages %}
+                <div class="flash-message {{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
+      
+        <div class="form-group">
+          {{ form.email.label }}
+          {{ form.email(class="form-control", placeholder="Email") }}
+          {% for error in form.email.errors %}
+              <span class="error">{{ error }}</span>
+          {% endfor %}
+        </div>
+      
+        <div class="form-group">
+          {{ form.password.label }}
+          {{ form.password(class="form-control", placeholder="Password") }}
+          {% for error in form.password.errors %}
+              <span class="error">{{ error }}</span>
+          {% endfor %}
+        </div>
+      
+        <div class="forgot">
+          <a href="{{ url_for('main.forgot_password') }}">Forgot Password?</a>
+        </div>
+        <div class="forgot">
+          <a href="{{ url_for('main.signup') }}">Don't have an account? Sign Up</a>
+        </div>
+        
+        {{ form.submit(class="login-btn") }}
+      </form>
+      
+    </div>
+
+    <div class="image-section">
+      <div class="overlay-card">
+        <h4>Take Charge of Your Finances — Log In to Gain Control.</h4>
+      </div>
+      <div class="bottom-text">
+        <h3>Break the Routine, <br> Master Your Money!</h3>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

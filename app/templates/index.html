@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>eXpenserFX: Your Pocket Friend</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/Designer-removebg-preview.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="hero-section">
+        <section class="overlay">
+            <div class="content-box">
+                <h2 class="hero-heading">Track Your Expenses Effortlessly with UPI</h2>
+                <p class="hero-paragraph">
+                    Simplify your financial life. Effortlessly track expenses and gain insights with our UPI-powered expense tracker.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="upi-section" id="upi-section">
+        <div class="upi-container">
+            <h2 class="upi-heading">UPI-Powered Simplicity</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Automatic Tracking</h3>
+                    <p>Automatically track expenses through UPI transactions. Real-time categorization of expenses like food, travel, and bills.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Customizable</h3>
+                    <p>Customize categories to fit your spending habits. Seamless integration with all major UPI apps: Google Pay, PhonePe, Paytm.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Secure</h3>
+                    <p>Enjoy secure data encryption and privacy protection. No manual entry needed – seamless and hassle-free expense tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reports-section">
+        <div class="reports-image">
+            <img src="{{ url_for('static', filename='images/SmxLq3276CONn2AZY33i0 (1).jpg') }}" alt="Monthly Expense Report">
+        </div>
+        <div class="reports-content">
+            <h2>Monthly Expense Reports</h2>
+            <div class="report-feature">
+                <div class="feature-number">1</div>
+                <div class="feature-details">
+                    <h3>Automatic Reports</h3>
+                    <p>Get monthly reports delivered to your inbox automatically, visually displayed.</p>
+                </div>
+            </div>
+            <div class="report-feature">
+                <div class="feature-number">2</div>
+                <div class="feature-details">
+                    <h3>Spending Patterns</h3>
+                    <p>Easily understand spending patterns with charts and graphs, broken down by category.</p>
+                </div>
+            </div>
+            <div class="report-feature">
+                <div class="feature-number">3</div>
+                <div class="feature-details">
+                    <h3>Smart Insights</h3>
+                    <p>Compare spending across months to identify areas where you can save money effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="setup-section">
+        <h2 class="setup-title">Simple Setup, Automatic Tracking</h2>
+        <div class="setup-step">
+            <div id="step-number1">1</div>
+            <div class="step-content">
+                <h3>Sign Up</h3>
+                <p>Create a free account in under 60 seconds.</p>
+            </div>
+        </div>
+        <div class="setup-step">
+            <div id="step-number2">2</div>
+            <div class="step-content">
+                <h3>Connect UPI</h3>
+                <p>Securely connect your UPI-linked bank account in 3 easy steps.</p>
+            </div>
+        </div>
+        <div class="setup-step">
+            <div id="step-number3">3</div>
+            <div class="step-content">
+                <h3>Monthly Reports</h3>
+                <p>Receive monthly expense reports directly to your email.</p>
+            </div>
+        </div>
+    </section>
+    <section class="control-finances">
+        <h2 class="control-title">Take Control of Your Finances Today</h2>
+        <div class="control-cards">
+            <div class="control-card">
+                <h3>Why wait? Create your account today</h3>
+                <button onclick="window.location.href='{{ url_for('main.signup') }}'">Sign Up</button>
+            </div>
+            <div class="control-card">
+                <h3>Already have an account?</h3>
+                <button onclick="window.location.href='{{ url_for('main.login') }}'">Login</button>
+            </div>
+            <div class="control-card">
+                <h3>Want to know more?</h3>
+                <button><a href="#upi-section">Info.</a></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
