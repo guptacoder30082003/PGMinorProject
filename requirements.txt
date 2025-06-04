@@ -4,7 +4,7 @@ SQLAlchemy==1.4.49
 Flask-Migrate==4.0.5
 psycopg2-binary==2.9.7
 Flask-Login==0.6.2
-Flask-Security==4.1.0
+Flask-Security-Too==4.1.0
 Flask-Bcrypt==1.0.1
 itsdangerous==2.0.1
 markupsafe==2.0.1
