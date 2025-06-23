@@ -30,6 +30,11 @@ def start_email_thread(app):
 def home():
     return render_template('index.html')
 
+@bp.route('/create-tables')Add commentMore actions
+def create_tables():
+    db.create_all()
+    return 'Tables created successfully!
+    
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
