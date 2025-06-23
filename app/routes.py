@@ -25,6 +25,11 @@ def start_email_thread(app):
             thread = Thread(target=send_monthly_report)
             thread.daemon = True
             thread.start()
+            
+@bp.route('/create-tables')
+def create_tables():
+    db.create_all()
+    return 'Tables created successfully!'
 
 @bp.route('/')
 def home():
