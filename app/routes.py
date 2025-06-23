@@ -33,7 +33,7 @@ def home():
 @bp.route('/create-tables')
 def create_tables():
     db.create_all()
-    return 'Tables created successfully!
+    return 'Tables created successfully!'
     
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
