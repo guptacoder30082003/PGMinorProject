@@ -30,7 +30,7 @@ def start_email_thread(app):
 def home():
     return render_template('index.html')
 
-@bp.route('/create-tables')Add commentMore actions
+@bp.route('/create-tables')
 def create_tables():
     db.create_all()
     return 'Tables created successfully!
