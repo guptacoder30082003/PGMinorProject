@@ -26,11 +26,6 @@ def start_email_thread(app):
             thread.daemon = True
             thread.start()
             
-@bp.route('/create-tables')
-def create_tables():
-    db.create_all()
-    return 'Tables created successfully!'
-
 @bp.route('/')
 def home():
     return render_template('index.html')
