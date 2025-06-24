@@ -29,11 +29,6 @@ def start_email_thread(app):
 @bp.route('/')
 def home():
     return render_template('index.html')
-
-@bp.route('/create-tables')
-def create_tables():
-    db.create_all()
-    return 'Tables created successfully!'
     
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
