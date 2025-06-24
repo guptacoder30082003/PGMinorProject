@@ -26,6 +26,7 @@ def create_app():
     app.register_blueprint(main_bp)
     
     with app.app_context():
+        db.create_all()
         if not app.debug or os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
             from app.routes import send_monthly_report
             email_thread = Thread(target=send_monthly_report)
