@@ -156,3 +156,79 @@ body {
 .flash-message.danger {
   background-color: #dc3545;
 }
+
+
+@media (max-width: 900px) {
+  .container, .container1 {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .image-section, .image-section1, .login-section {
+    flex: none;
+  }
+  
+  .image-section, .image-section1 {
+    height: 200px;
+    order: -1; /* Moves image to top */
+  }
+  
+  .login-section {
+    padding: 30px;
+  }
+  
+  .overlay-card {
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+  
+  .bottom-text {
+    font-size: 16px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-section {
+    padding: 20px;
+  }
+  
+  .login-section h1 {
+    font-size: 22px;
+  }
+  
+  .tagline {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  
+  .form input, .login-btn {
+    padding: 10px;
+  }
+  
+  .forgot a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-section {
+    padding: 15px;
+  }
+  
+  .login-section h1 {
+    font-size: 20px;
+  }
+  
+  .tagline {
+    margin-bottom: 20px;
+  }
+  
+  .bottom-text {
+    font-size: 14px;
+  }
+}
